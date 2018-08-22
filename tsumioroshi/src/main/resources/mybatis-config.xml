@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<settings>
+	<setting name="jdbcTypeForNull" value="VARCHAR"/>
+</settings>
+
+	<typeAliases>
+		<!-- <typeAlias type="" alias=""/> -->
+		<typeAlias type="global.sesoc.tsumioroshi.vo.FirstCategory" alias="FirstCategory"/>
+		<typeAlias type="global.sesoc.tsumioroshi.vo.SecondCategory" alias="SecondCategory"/>
+	</typeAliases>
+	
+	<mappers>
+		<!-- <mapper resource="" /> -->
+		 <mapper resource="mappers/CategoriesMapper.xml" />
+	</mappers>
+	
+</configuration>
