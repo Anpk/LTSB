@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="global.sesoc.tsumioroshi.dao.LogMapper">
+<insert id ="insert_Release_Log_1" parameterType="Release">
+insert into Release_Log(
+	product_Name,
+	product_Number,
+	order_Number,
+	order_Date,
+	destination,
+	delivery_Amount,
+	charge1	
+)
+values
+(
+	#{product_Name},
+	#{product_Number},
+	release_seq.nextval,
+	#{order_Date},
+	#{destination},
+	#{delivery_Amount},
+	#{charge1}	
+)
+</insert>
+
+<insert id ="insert_Stock_Log_1" parameterType="Stock">
+insert into Stock_Log(
+	product_Name,
+	product_Number,
+	order_Number,
+	order_Date,
+	departure,
+	stock_Amount,
+	charge1	
+)
+values
+(
+	#{product_Name},
+	#{product_Number},
+	stock_seq.nextval,
+	#{order_Date},
+	#{departure},
+	#{stock_Amount},
+	#{charge1}	
+)
+</insert>
+</mapper>
