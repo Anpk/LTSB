@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="global.sesoc.tsumioroshi.dao.ProductMapper">
+
+<select parameterType="String" resultType="Product" id="select_Shelf_Product">
+select 
+product_Name, product_Number, tag_Number, quantity, expiration_Date, stock_Date, product_Location
+from PRODUCT
+where product_Location = #{shelf_Name} 
+ </select>
+</mapper>

@@ -6,9 +6,13 @@
 	<typeAliases>
 		<typeAlias type="global.sesoc.tsumioroshi.vo.Release_Log" alias="Release"/>
 		<typeAlias type="global.sesoc.tsumioroshi.vo.Stock_Log" alias="Stock"/>
+		<typeAlias type="global.sesoc.tsumioroshi.vo.Shelf" alias="Shelf"/>
+		<typeAlias type="global.sesoc.tsumioroshi.vo.Product" alias="Product"/>
 	</typeAliases>
 	
 	<mappers>
 		<mapper resource="mappers/logMapper.xml" />
+		<mapper resource="mappers/shelfMapper.xml" />
+		<mapper resource="mappers/productMapper.xml" />
 	</mappers>
 </configuration>

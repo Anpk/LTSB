@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="global.sesoc.tsumioroshi.dao.ShelfMapper">
+
+<select parameterType="String" resultType="Shelf" id="select_Shelf">
+select 
+shelf_Name, shelf_Size, shelf_Location, shelf_Condition, shelf_Tag
+from SHELF
+where shelf_Name = #{shelf_Name} 
+ </select>
+ 
+ <select resultType="Shelf" id="select_Every_Shelves">
+ select
+ shelf_Name
+ from SHELF
+ </select>
+
+<!-- 검색 기능 구현해야함  이름 / 컨디션  / 태그-->
+
+</mapper>
