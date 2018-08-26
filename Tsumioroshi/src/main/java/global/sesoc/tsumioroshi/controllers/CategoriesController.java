@@ -1,10 +1,10 @@
-package global.sesoc.tsumioroshi;
+package global.sesoc.tsumioroshi.controllers;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -15,7 +15,7 @@ import global.sesoc.tsumioroshi.vo.FirstCategory;
 import global.sesoc.tsumioroshi.vo.SecondCategory;
 
 @Controller
-public class CategoriesController {
+public class CategoriesController { 
 	@Autowired
 	CategoriesRepository repositoy;
 
@@ -24,7 +24,7 @@ public class CategoriesController {
 	@RequestMapping(value = "categories", method = RequestMethod.GET)
 	public String categoriesMenu() {
 
-		return "category/createcategory";
+		return "category/createCategory";
 	}
 
 	@RequestMapping(value = "selectAllFirst", method = RequestMethod.POST)
@@ -88,7 +88,7 @@ public class CategoriesController {
 	@RequestMapping(value = "selectByFcCodeSecond", method = RequestMethod.POST)
 	public @ResponseBody List<SecondCategory> selectByFcCodeSecond(SecondCategory second){
 		List<SecondCategory> list = repositoy.selectByFcCodeSecond(second);
-		System.out.println(list);
+		
 		
 		return list;
 	}

@@ -135,7 +135,7 @@ function listFirst(resp){
 	var result ='';
 	var options ='';
 	
-	result += '<h4>[대분류]</h2>';
+	result += '<h4>[대분류]</h4>';
 	result += '<table border="1"';
 	result += '<tr>';
 	result += '<th>대분류 명</th>';
