@@ -69,5 +69,9 @@ local.properties
 ### Java-Web ###
 ## ignoring target file
 target/
+<<<<<<< HEAD
+servers/
+=======
 
 
+>>>>>>> origin/wdv
