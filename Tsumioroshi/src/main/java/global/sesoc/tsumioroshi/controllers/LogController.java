@@ -12,9 +12,6 @@ import global.sesoc.tsumioroshi.dao.LogRepository;
 import global.sesoc.tsumioroshi.vo.Release_Log;
 import global.sesoc.tsumioroshi.vo.Stock_Log;
 
-/**
- * Handles requests for the application home page.
- */
 @Controller
 public class LogController {
 	

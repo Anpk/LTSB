@@ -9,11 +9,15 @@
 		<typeAlias type="global.sesoc.tsumioroshi.vo.FirstCategory" alias="FirstCategory"/>
 		<typeAlias type="global.sesoc.tsumioroshi.vo.SecondCategory" alias="SecondCategory"/>
 		<typeAlias type="global.sesoc.tsumioroshi.vo.Members" alias="Members"/>
+    <typeAlias type="global.sesoc.tsumioroshi.vo.Shelf" alias="Shelf"/>
+		<typeAlias type="global.sesoc.tsumioroshi.vo.Product" alias="Product"/>
 	</typeAliases>
 	
 	<mappers>
 		<mapper resource="mappers/CategoriesMapper.xml" />
 		<mapper resource="mappers/logMapper.xml" />
 		<mapper resource="mappers/MemberMapper.xml" />
+		<mapper resource="mappers/shelfMapper.xml" />
+		<mapper resource="mappers/productMapper.xml" />
 	</mappers>
 </configuration>

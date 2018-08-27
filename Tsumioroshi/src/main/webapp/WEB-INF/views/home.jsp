@@ -12,9 +12,12 @@
 <br>
 <a href="stock_Log_Form_1">입고 기록 작성 Form</a>
 <br>
+<a href="select_Every_Shelves">창고 내부</a>
+<br>
 <a href="categories">카테고리</a>
 <br>
 <a href="memberMenu">멤버</a>
+
 
 </body>
 </html>
